@@ -1,0 +1,19 @@
+body{
+    background-color:#E9F1F3;
+}
+
+h3 {
+    text-align: center;
+    padding: 25px;
+}
+
+#bookimg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style-position: inside;
+}

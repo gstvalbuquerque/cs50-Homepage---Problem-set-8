@@ -1,0 +1,11 @@
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+    height: auto;
+    width: 100%;    
+}
+
+body {
+    background-color:#E9F1F3;
+}

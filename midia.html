@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="midia.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <title>Media</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">The Witcher 3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="midia.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    </ul>
+                  </div>
+                </nav>
+              </header>
+        <main>
+            <h3 style="text-align: center; padding: 25px;">
+                Image Gallery
+            </h3>
+             <!-- The grid: four columns -->
+            <div class="row">
+                <div class="column">
+                <img src="foto1.jpg" alt="Geralt" height="150" width="150" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                <img src="foto2.jpg" alt="Geralt and Ciri" height="150" width="150" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                <img src="foto3.png" alt="Geralt, Ciri and Yennefer" height="150" width="150" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                <img src="foto4.jpg" alt="Ciri" height="150" width="150" onclick="myFunction(this);">
+                </div>
+            </div>   
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+            
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div> 
+
+            <script>
+                function myFunction(imgs) {
+                  var expandImg = document.getElementById("expandedImg");
+                  var imgText = document.getElementById("imgtext");
+                  expandImg.src = imgs.src;
+                  expandImg.parentElement.style.display = "block";
+                }
+                </script>
+            <div>
+                <h3 style="text-align: center; padding: 25px;">
+                    Game Trailer
+                    <p style="padding: 25px;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XHrskkHf958" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </p>
+                </h3>
+            </div>
+        </main>
+       
+    </body>
+</html>
