@@ -1,2 +1,3 @@
 # cs50-Homepage---Problem-set-8
-Codes of my homepage built for cs50's problem set 8
+Web page built as a solution to cs50 web track problem set 8
+Its a simple website about The Witcher 3
